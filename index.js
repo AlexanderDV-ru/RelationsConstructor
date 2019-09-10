@@ -22,7 +22,7 @@ workspace.ondblclick=function(e)
 	color.oninput=function(e)
 	{
 		newEl.style.background=color.value || 'white'
-		for(i=0;i<linesCount;i++)
+		for(i=0;i<0+linesCount;i++)
 		{
 			document.getElementById(newEl.id+'-line'+i).setAttribute('stroke',newEl.style.background)
 		}
@@ -90,7 +90,7 @@ workspace.ondblclick=function(e)
 			newEl.style.left = e.pageX - shiftX + 'px'
 			newEl.style.top = e.pageY - shiftY + 'px'
 			
-			for(i=0;i<linesCount;i++)
+			for(i=0;i<0+linesCount;i++)
 			{
 				document.getElementById(newEl.id+'-line'+i).setAttribute('x1',newEl.style.left)
 				document.getElementById(newEl.id+'-line'+i).setAttribute('y1',newEl.style.top)
@@ -139,8 +139,8 @@ workspace.ondblclick=function(e)
 //		inp.oninput=function(e)
 //		{
 //			var v=document.getElementById("inp"+r+"r"+c).value.replace("\r\n","\n").replace("\r","\n")              
-//			for(q=0;q<v.split("\n").length;q++)  
-//				for(w=0;w<v.split("\n")[q].split("\t").length;w++)
+//			for(q=0;q<0+v.split("\n").length;q++)  
+//				for(w=0;w<0+v.split("\n")[q].split("\t").length;w++)
 //					document.getElementById("inp"+(r+q)+"r"+(c+w)).value=v.split("\n")[q].split("\t")[w]
 //		}
 //		
